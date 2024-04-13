@@ -1,0 +1,49 @@
+body {
+    background-color: #e0e0e2;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0px;
+}
+
+li {
+    display: inline;
+}
+
+main {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+h1 {
+    color: #721817;
+}
+
+h2 {
+    color: #721817;
+}
+
+img {
+    display: block;
+    margin-inline: auto;
+}
+
+form>div {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#copyright {
+    padding-top: 12px;
+    margin-bottom: 0.5em;
+}
+
+input:focus:invalid {
+    border: 3px solid red;
+    color: red;
+}

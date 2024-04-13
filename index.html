@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Little Lemon</title>
+
+		<meta property="og:title" content="Our Menu" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="./little-lemon-logo.png" />
+		<meta property="og:url" content="https://littlelemon" />
+		<meta
+			property="og:description"
+			content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist."
+		/>
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:site_name" content="Little Lemon" />
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<img src="./little-lemon-logo.png" width="300" alt="website-logo" />
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Location</a></li>
+					<li><a href="#">Blog</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<h1>Sign Up</h1>
+			<form method="POST">
+				<div>
+					<label for="user_first_name">First Name</label><br />
+					<input
+						type="text"
+						id="user_first_name"
+						name="user_first_name"
+						required
+						minlength="3"
+						maxlength="15"
+					/>
+				</div>
+				<div>
+					<label for="user_last_name">Last Name</label><br />
+
+					<input
+						type="text"
+						id="user_last_name"
+						name="user_last_name"
+						required
+						minlength="3"
+						maxlength="15"
+					/>
+				</div>
+				<div>
+					<label for="user_email">Email</label><br />
+
+					<input type="email" name="user_email" id="user_email" required />
+				</div>
+				<div>
+					<label for="user_password">Password</label><br />
+
+					<input
+						type="password"
+						name="user_password"
+						id="user_password"
+						required
+						minlength="8"
+						maxlength="15"
+					/>
+				</div>
+				<div>
+					<label for="user_confirm_password">Confirm Password</label><br />
+
+					<input
+						type="password"
+						name="user_confirm_password"
+						id="user_confirm_password"
+						required
+						minlength="8"
+						maxlength="15"
+					/>
+				</div>
+				<div>
+					<button type="submit">Sign Up</button>
+				</div>
+			</form>
+		</main>
+		<footer>
+			<p id="copyright">Copyright Little Lemon</p>
+		</footer>
+		
+	</body>
+</html>
