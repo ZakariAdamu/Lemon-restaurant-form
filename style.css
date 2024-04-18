@@ -39,6 +39,10 @@ form>div {
     margin-bottom: 0.5em;
 }
 
+.margin-bottom {
+    margin-bottom: 26px;
+}
+
 #copyright {
     padding-top: 12px;
     margin-bottom: 0.5em;

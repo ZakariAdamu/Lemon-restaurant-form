@@ -7,8 +7,18 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
+		<header>
+			<nav>
+				<img src="./assets/logo.png" width="160" alt="website-logo" />
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Menu</a></li>
+					<li><a href="./media-rating.html" target="_blank">Blog</a></li>
+				</ul>
+			</nav>
+		</header>
 		<main>
-			<img src="./assets/little-lemon-logo_2.png" width="300" alt="logo" />
+			<!-- <img src="./assets/little-lemon-logo_2.png" width="300" alt="logo" /> -->
 			<h1>Book a Table</h1>
 			<form action="" method="POST">
 				<!-- First table-booking format -->
@@ -40,7 +50,7 @@
 				</fieldset> -->
 
 				<!-- ========Second table-booking format =========-->
-				<div>
+				<div class="margin-bottom">
 					<label for="email_address">Enter your email</label>
 					<input
 						type="email"
@@ -49,7 +59,7 @@
 						required
 					/>
 				</div>
-				<div>
+				<div class="margin-bottom">
 					<label for="booking_date">Booking Date</label>
 					<input type="date" name="booking_date" id="booking_date" required />
 				</div>
@@ -66,19 +76,19 @@
 					/>
 					<output>4</output>
 				</div> -->
-				<div>
+				<div class="margin-bottom">
 					<label for="number-of-people">Number of people</label>
 					<input
 						type="number"
 						id="number-of-people"
 						min="1"
-						max="8"
+						max="10"
 						value="2"
 						name="number-of-people"
 						required
 					/>
 				</div>
-				<div>
+				<div class="margin-bottom">
 					<label for="booking_location">Location</label>
 					<input
 						id="booking_location"
@@ -91,7 +101,7 @@
 						<option value="Uptown"></option>
 					</datalist>
 				</div>
-				<div>
+				<div class="margin-bottom">
 					<label for="agreement">
 						<input type="checkbox" name="agreement" id="agreement" required />
 						I agree to the cancellation policy</label
