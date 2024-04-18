@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Media ratings</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<img
+					src="./assets/logo.png"
+					width="160"
+					height="150"
+					alt="website-logo"
+				/>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Location</a></li>
+					<li><a href="#">Blog</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<video controls muted width="300" height="220">
+				<source
+					src="./assets/4K Relaxing Nature Sounds - Short Video Clips of Nature.mp4"
+					type="video/mp4"
+				/>
+			</video>
+			<br />
+			<audio loop controls>
+				<source
+					src="./assets/rainy-day-in-town-with-birds-singing-194011.mp3"
+					type="audio/mp3"
+				/>
+			</audio>
+			<form action="">
+				<!-- <div>
+					<label for="ratings">Rating</label>
+					<input
+						type="range"
+						id="ratings"
+						name="ratings"
+						min="1"
+						max="5"
+						value="4"
+						list="ratings"
+					/>
+					<datalist id="ratings">
+						<option value="1" label="1"></option>
+						<option value="2"></option>
+						<option value="3"></option>
+						<option value="4"></option>
+						<option value="5" label="5"></option>
+					</datalist>
+				</div> -->
+
+				<div class="rating">
+					<label for="ratings">Rating</label>
+					<input
+						type="range"
+						name="ratings"
+						id="ratings"
+						min="1"
+						max="5"
+						value="5"
+						oninput="this.nextElementSibling.value = this.value"
+					/>
+					<output>4</output>
+				</div>
+				<button type="submit">Submit Rating</button>
+			</form>
+		</main>
+	</body>
+</html>

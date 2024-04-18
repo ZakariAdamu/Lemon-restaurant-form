@@ -1,5 +1,6 @@
 body {
     background-color: #e0e0e2;
+    height: fit-content;
 }
 
 ul {
@@ -46,4 +47,33 @@ form>div {
 input:focus:invalid {
     border: 3px solid red;
     color: red;
+}
+
+/* ========Media rating unique styles======== */
+
+video {
+    margin-bottom: 36px;
+}
+
+.rating {
+    font-family: 'Lucida Sans', Verdana, sans-serif;
+    margin: 20px auto;
+}
+
+button {
+    font-family: 'Lucida Sans', sans-serif;
+    padding: 7px;
+    margin-bottom: 0;
+    font-size: 11.4px;
+    border-radius: 7px;
+    background-color: #2863a7;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1350px) {
+    button {
+        margin-top: 10px;
+    }
 }
